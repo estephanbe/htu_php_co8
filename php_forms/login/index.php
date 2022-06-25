@@ -3,6 +3,10 @@ session_start();
 
 include '../../utilities/constants.php';
 
+if(isset($_SESSION['user'])){
+    header("Location: " . BASE_URL . '/php_forms/login/home.php');
+}
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -38,7 +42,7 @@ include '../../utilities/constants.php';
             <label for="htuPassword" class="form-label">Password</label>
             <input name="password" type="password" class="form-control" id="htuPassword" minlength="5" maxlength="15" required>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Login</button>
     </form>
 
     <?php if(isset($_SESSION['login_erros'])):  ?>

@@ -23,7 +23,10 @@ if(!isset($_SESSION['user'])){
 
     <?php include '../forms_nav.php'; ?>
 
-    <h1>Home page after successfull login!</h1>
+    <div class="d-flex justify-content-between">
+        <h1>Home page after successfull login!</h1>
+        <a href="./logout.php" class="btn btn-danger">Logout</a>
+    </div>
 
     
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

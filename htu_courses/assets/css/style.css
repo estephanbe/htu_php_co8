@@ -1,0 +1,43 @@
+footer {
+    color: #e4e4e4;
+}
+
+#htu-landing-mainContainer {
+    height: 85vh;
+}
+
+#htu-landing-mainContainer, #htu-home-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/main_bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#htu-landing-mainContainer #htu-landing-jum, #htu-home-mainContainer #htu-home-jum {
+    width: 50%;
+    height: 50%;
+}
+
+#htu-login-mainContainer {
+    height: 70vh;
+}
+
+#htu-home-welcome {
+    height: 70vh;
+}
+
+#htu-home-slogan {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+#htu-courses-search {
+    min-height: 75vh;
+}
+
+#htu-courses-search h1 {
+    text-decoration: underline !important;
+}

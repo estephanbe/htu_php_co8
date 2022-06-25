@@ -2,7 +2,17 @@
 session_start();
 require '../../utilities/constants.php';
 
-// var_dump($_POST);
+// Making sure that the request is post
+// Making sure that the $_POST is not empty
+// Making sure that the name attribute is set correctly in the HTML
+// Making sure that the value of the html input is not empty
+// Making sure the pattern of the value is correct
+// Making sure that user exists
+// Making sure that data matched
+// if all the above is true
+    // redirect to the home page
+// else
+    // redirect back to the login page with error messages
 
 $error_msgs = array();
 $error = false;

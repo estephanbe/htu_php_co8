@@ -4,6 +4,21 @@ include '../utilities/constants.php';
 $base_url = 'http://' . $_SERVER['HTTP_HOST'];
 $home_url = $base_url . '/htu_courses/';
 
+function echo_breadcrumb($current_page, $title){ // return void
+    echo "
+    <div class='d-flex justify-content-between align-items-center'>
+        <ul class='list-inline'>
+            <li class='list-inline-item'>
+                <a href='./home.php'>Home</a>
+            </li>
+            <li class='list-inline-item'>></li>
+            <li class='list-inline-item'>$current_page</li>
+        </ul>
+        <h1 class='text-center my-5'>$title</h1>
+    </div>
+    ";
+}
+
 ?>
 
 <!doctype html>

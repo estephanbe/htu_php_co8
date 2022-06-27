@@ -29,7 +29,7 @@ if(empty($course)){
 
 
 <div class="container my-5">
-    <h1 class="text-center my-5">Course Title</h1>
+    <?php echo_breadcrumb('Course Details', $course->title) ?>
     <div class="row">
         <div class="col-6">
             <img src="https://www.codingdojo.com/blog/wp-content/uploads/19_best-courses_blog_600x341.jpg" alt="Course Title">

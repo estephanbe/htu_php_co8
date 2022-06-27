@@ -25,9 +25,14 @@ foreach ($courses as $course) {
 ?>
 
 
-
 <div id="htu-courses-search" class="container my-5">
-    <h1 class="text-center my-5">Search Courses</h1>
+    <?php echo_breadcrumb('Search', "Searching for \"$key_word\""); ?>
+
+    <div class="my-5">
+        <form method="GET" action="./search.php" id="htu-home-search">
+            <input name="s" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+    </div>
 
     <?php if(!empty($found_courses)){ ?>
 

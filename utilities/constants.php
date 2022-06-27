@@ -16,6 +16,16 @@ define('LESSONS', [
         'name' => "HTU Courses",
         'description' => "Bulding a website using PHP. Note: this website is not connected to the DB yet.",
         'link' => BASE_URL . '/htu_courses/'
+    ],
+    [
+        'name' => "Handling Files",
+        'description' => "Learn how to read and write to files.",
+        'link' => BASE_URL . '/handle_files/'
+    ],
+    [
+        'name' => "CV Generator",
+        'description' => "Generate CVs based on user inputs",
+        'link' => BASE_URL . '/cv_generator/'
     ]
 ]);
 

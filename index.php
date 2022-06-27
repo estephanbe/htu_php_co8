@@ -33,7 +33,7 @@ include './utilities/constants.php';
     <h1 class="text-center mb-5">PHP Course Lessons</h1>
     <div class="row">
         <?php foreach(LESSONS as $lesson): ?>
-            <div class="col-4">
+            <div class="col-4 my-5">
                 <div class="card h-100" style="width: 18rem;">
                     <div class="card-body htu-card-body">
                         <h5 class="card-title"><?= $lesson['name'] // (<?=) === echo ?></h5>

@@ -16,6 +16,7 @@ include '../utilities/constants.php';
 
     <div class="container my-5">
         <h1>CV Generator Application</h1>
+        <a href="./search.php">Get Your CV</a>
 
         <form method="GET" action="./create.php" class="w-50">
 

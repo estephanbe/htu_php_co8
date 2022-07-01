@@ -26,6 +26,11 @@ define('LESSONS', [
         'name' => "CV Generator",
         'description' => "Generate CVs based on user inputs",
         'link' => BASE_URL . '/cv_generator/'
+    ],
+    [
+        'name' => "Restaurant Portal",
+        'description' => "Restaurant portal for customers to reserve their tables.",
+        'link' => BASE_URL . '/restaurant/'
     ]
 ]);
 

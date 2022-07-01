@@ -2,7 +2,7 @@
 
 // We validate data first!
 // We are creating without any validation! We should validate first!!!
-var_dump($_GET);
+// var_dump($_GET);
 
 $name = $_GET['fname'] . ' ' . $_GET['lname'];
 $email = $_GET['email'];
@@ -16,6 +16,7 @@ $cv = array(
     "id" => 0,
     "name" => $name,
     "phone" => $phone,
+    "email" => $email,
     "statement" => $statement,
     "w_experience" => $w_experience,
     "education" => $education,
@@ -28,7 +29,7 @@ foreach($w_experience as $w){
     $final_w_e .= "<li>$w</li>";
 }
 $final_education= '';
-foreach($w_experience as $e){
+foreach($education as $e){
     $final_education .= "<li>$e</li>";
 }
 $final_skills = '';
@@ -48,11 +49,20 @@ $html_template = <<<EOD
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>$name</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+    @media print {
+        #printCV {
+            display: none;
+        }
+    }
+    </style>
 </head>
 
 <body>
 
     <div class="container my-5">
+        <a href="../">Back</a>
         <h1 class="my-5">Resume</h1>
 
         <section class="my-4" id="basicInfo">
@@ -91,6 +101,12 @@ $html_template = <<<EOD
             </ul>
         </section>
 
+    </div>
+
+    <div class"row">
+        <div class="col-12">
+            <button id="printCV" type="button" onclick="window.print();">Print CV</button>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

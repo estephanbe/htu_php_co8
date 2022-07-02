@@ -31,6 +31,11 @@ define('LESSONS', [
         'name' => "Restaurant Portal",
         'description' => "Restaurant portal for customers to reserve their tables.",
         'link' => BASE_URL . '/restaurant/'
+    ],
+    [
+        'name' => "Customers Database",
+        'description' => "Manage customers",
+        'link' => BASE_URL . '/sql_customers/'
     ]
 ]);
 
